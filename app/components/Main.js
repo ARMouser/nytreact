@@ -1,5 +1,8 @@
 var React = require("react");
 var Link = require("react-router").Link;
+import Results from "./children/Results";
+import Saved from "./children/Saved";
+import Search from "./children/Search";
 
 var Main = React.createClass({
     render: function() {
@@ -14,9 +17,9 @@ var Main = React.createClass({
                         Search and Save what is important to you!
                     </h3>
                 </div>
-                <div>
-                    <Link to="/search" />
-                </div>
+                <Search />
+                <Results />
+                <Saved />
             </div>
         );
     }
